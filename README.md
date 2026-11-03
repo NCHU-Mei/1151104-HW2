@@ -49,7 +49,12 @@ streamlit run app.py --server.port 8502
 | [test.csv](data/test.csv) | 745,305 | Flood 官方無標籤測試資料，用於產生提交檔 |
 | [sample_submission.csv](data/sample_submission.csv) | 745,305 | 提交格式與 ID 順序範本 |
 
-Flood 資料對應 Kaggle [Regression with a Flood Prediction Dataset（Playground Series S4E5）](https://www.kaggle.com/competitions/playground-series-s4e5)。Human–AI 資料的既有文件標示來源為 Kaggle，但專案未附原始資料頁與授權資訊，仍需補上正式來源。資料的使用及再散布應遵守原始來源條款。
+資料集來源：
+
+- **Regression with a Flood Prediction Dataset（Playground Series S4E5）**：[Kaggle 競賽資料頁](https://www.kaggle.com/competitions/playground-series-s4e5/data)，對應 `train.csv`、`test.csv` 與 `sample_submission.csv`。
+- **Human-AI Interaction**：[Kaggle 資料集頁](https://www.kaggle.com/datasets/eshaalnmalik/human-ai-interaction?resource=download)，對應 `Human-AI Interaction.csv`。
+
+資料的使用及再散布應遵守各 Kaggle 來源頁的授權與使用條款。
 
 四份 CSV 合計約 106.7 MB，單檔皆小於 GitHub 的 100 MiB 限制；本專案直接納入 CSV。Flood 的 `test.csv` 沒有目標欄位，不能用來計算評估指標。
 
