@@ -2,6 +2,12 @@
 
 以 **Streamlit、Scikit-learn 與 Statsmodels** 建立的互動式多元線性回歸專案，依 CRISP-DM 六階段完成資料探索、前處理、特徵選擇、模型比較、評估與新資料預測。提供繁體中文操作提示，也可透過命令列執行實驗與輸出圖表。
 
+## 線上 Demo
+
+立即體驗：[ML Regression Lab](https://1151104-hw2.streamlit.app/)
+
+![ML Regression Lab 線上 Demo：資料集選擇、模型設定與資料總覽](docs/images/demo-screenshot.png)
+
 ## 功能總覽
 
 - 資料來源：Human–AI Interaction、Flood Prediction、公開 HTTPS CSV URL、上傳 CSV。
@@ -151,7 +157,7 @@ python -m pytest -q
 
 目前原始碼有 6 個測試函式，涵蓋六種方法基本擬合、訓練補值不使用 holdout、評估指標、預測區間、診斷與提交格式。自動測試不等於已完成瀏覽器驗收；手動項目見 [PHASE4_TESTING.md](PHASE4_TESTING.md)，其中舊版「四個測試」紀錄屬歷史資訊。
 
-可於 Streamlit Community Cloud 連接此 GitHub 儲存庫，入口指定 `app.py`，由 `requirements.txt` 安裝依賴。必須確保四份 CSV 可在部署環境存取；全量 Flood、密集 One-Hot 編碼與 SFS 可能超出免費環境資源，建議先以小樣本及 Baseline 驗證。專案未附已部署網站連結。
+線上 Demo：[https://1151104-hw2.streamlit.app/](https://1151104-hw2.streamlit.app/)。可於 Streamlit Community Cloud 連接此 GitHub 儲存庫，入口指定 `app.py`，由 `requirements.txt` 安裝依賴。必須確保四份 CSV 可在部署環境存取；全量 Flood、密集 One-Hot 編碼與 SFS 可能超出免費環境資源，建議先以小樣本及 Baseline 驗證。
 
 ## 判讀限制與待補資料
 
